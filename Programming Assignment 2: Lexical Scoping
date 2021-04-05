@@ -1,0 +1,30 @@
+Both functions that store the inverse matrix makes unique matrix variable that stores 
+inversemakeCacheMatrix<-function(m=matrix())
+start with
+i<-NULL 
+In order to set a matrix 
+set<-function(matrix){m<<-matrix i <<-NULL}
+In order to get a matrix
+get<-function()
+go back to the inversed matrix
+setinverse<-function(inverse) {i<<-inverse}
+In order to attain the matrix
+getinverse<-function()
+go back to the inverse property i
+go back to the list
+list(set=set,get=get,setinverse=setinverse, getinverse=getinverse)
+determine the value of inverse unique matrix through 'makeCacheMatrix' from previous statements
+use 'cachesolve' if the inverse of the unique matrix has already been calculated  from cache.cacheSolve<-function(x,...)
+go back to the matrix which has an inverse of x
+m<-x$getinverse()
+Remember to go back to the inverse matrix set
+if(!is.null(m))
+the text "getting the cached data" return(m)
+Based on the object data provide the matrix object
+data<-x$get()
+Determine the inverse through getting the product of the matrix
+m<-solve(data)%*%data
+
+Assign the inverse to x as variable
+x$setinverse(m)
+Lastly, go back to matrix m
